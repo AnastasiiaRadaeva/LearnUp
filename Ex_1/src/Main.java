@@ -12,17 +12,7 @@ class Main {
 
         int count = 0;
 
-        if (isGreenLight) {
-            if (speedOfPlayer1 == 0) {
-                count++;
-            }
-            if (speedOfPlayer2 == 0) {
-                count++;
-            }
-            if (speedOfPlayer3 == 0) {
-                count++;
-            }
-        } else {
+        if (!isGreenLight) {
             if (speedOfPlayer1 > 0) {
                 count++;
             }
